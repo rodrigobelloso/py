@@ -1,10 +1,10 @@
 # Solicitud de datos de la primera fracción
-num1 = int(input("Introduce el primer numerador: "))
-den1 = int(input("Introduce el primer denominador: "))
+num1 = float(input("Introduce el primer numerador: "))
+den1 = float(input("Introduce el primer denominador: "))
 
 # Solicitud de datos de la segunda fracción
-num2 = int(input("Introduce el segundo numerador: "))
-den2 = int(input("Introduce el segundo denominador: "))
+num2 = float(input("Introduce el segundo numerador: "))
+den2 = float(input("Introduce el segundo denominador: "))
 
 # Condición de denominador equivalente a 0
 if den1 != 0 and den2 != 0:
@@ -16,23 +16,27 @@ if den1 != 0 and den2 != 0:
 
     # Cálculo suma
     if opcion == 1:
-        logicaSuma = (num1 * den2 + num2 * den2) // (den1 * den2)
-        print("\nEl resultado de la suma es: ", logicaSuma)
+        sumaNumerador = num1 * den2 + num2 * den2
+        sumaDenominador = den1 * den2
+        print("\nEl resultado de la suma es: {}/{}\n".format(sumaNumerador, sumaDenominador))
     
     # Cálculo resta
     elif opcion == 2:
-        logicaResta = (num1 * den2 - num2 * den2) // (den1 * den2)
-        print("\nEl resultado de la resta es: ", logicaResta)
+        restaNumerador = num1 * den2 - num2 * den2
+        restaDenominador = den1 * den2
+        print("\nEl resultado de la resta es: {}/{}\n".format(restaNumerador, restaDenominador))
         
     # Cálculo multiplicación
     elif opcion == 3:
-        logicaMultiplicacion = (num1 * num2) // (den1 * den2)
-        print("\nEl resultado de la multiplicación es: ", logicaMultiplicacion)
+        multiplicacionNumerador = num1 * num2
+        multiplicacionDenominador = den1 * den2
+        print("\nEl resultado de la multiplicación es: {}/{}\n".format(multiplicacionNumerador, multiplicacionDenominador))
 
     # Cálculo división
     elif opcion == 4:
-        logicaDivision = (num1 * den2) // (num2 * den1)
-        print("\nEl resultado de la división es: ", logicaDivision)
+        divisionNumerador = num1 * den2
+        divisionDenominador = num2 * den1
+        print("\nEl resultado de la división es: {}/{}\n".format(divisionNumerador, divisionDenominador))
 
     # Condición de opción inexistente
     else:
