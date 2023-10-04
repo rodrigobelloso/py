@@ -17,7 +17,6 @@ if lista.count(maxValor) > 1:
 # 4. Se elimina el mínimo de lista
 minValor = min(lista)
 lista.remove(minValor)
-print(minValor)
 
 # 5. Se inserta el mínimo anterior en la primera posición de lista_aux
 listaAux.insert(0, minValor)
