@@ -1,22 +1,25 @@
-while True:
-    b = int(input("Introduzca la base (1 < b <= 10): "))
-    if 1 < b <= 10:
-        break
-    else:
-        print("Error: La base debe estar en el rango (1 < b <= 10)")
+baseMin = 1
+baseMax = 10
 
 while True:
-    N = int(input("Introduzca el número de dígitos (1 <= N <= 10): "))
-    if 1 <= N <= 10:
+    b = int(input(f"Introduzca una base [{baseMin}-{baseMax}]: "))
+    if baseMin < b <= baseMax:
         break
     else:
-        print("Error: El número de dígitos debe estar en el rango (1 <= N <= 10)")
+        print(f"Error: La base debe estar en el rango [{baseMin}-{baseMax}].")
+
+while True:
+    n = int(input(f"Introduzca el número de dígitos [{baseMin}-{baseMax}]: "))
+    if baseMin <= n <= baseMax:
+        break
+    else:
+        print(f"Error: El número de dígitos debe estar en el rango [{baseMin}-{baseMax}].")
 
 acumulador = 0
 
-for i in range(N):
+for i in range(n):
     while True:
-        cifra = int(input(f"Introduzca la cifra {N - i}: "))
+        cifra = int(input(f"Introduzca la cifra {n - i} [0 - {b-1}]: "))
         if 0 <= cifra < b:
             break
         else:
