@@ -1,8 +1,6 @@
-# Solicitud de datos
 print("Cálculo del perímetro. Elija una opción:\n")
 print("1) Circunferencia\n2) Cuadrado\n3) Rectángulo\nOpción:")
 
-# Cálculos
 opcion=int(input())
 error = False
 

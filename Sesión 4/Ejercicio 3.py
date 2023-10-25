@@ -28,5 +28,3 @@ while baseMin <= base or base <= baseMax:
 
         else:
             print("El número introducido 5tiene que ser superior a 0. Inténtalo de nuevo.")
-
-

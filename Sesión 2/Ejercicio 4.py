@@ -1,7 +1,5 @@
-# Solicitud de datos
 num = int(input("Introduce un numero: "))
 
-# Cálculos
 if 100 <= num <= 999:
     c = num // 100
     u = num % 10

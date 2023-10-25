@@ -1,7 +1,5 @@
-# Importación de bibliotecas
 import cmath
 
-# Solicitud de datos
 a = float(input("Introduce A: "))
 b = float(input("Introduce B: "))
 c = float(input("Introduce C: "))
@@ -30,5 +28,4 @@ else:
         x1 = (-b+raizDiscriminante) / (2*a)
         x2 = (-b-raizDiscriminante) / (2*a)
 
-        print("\nx1 = {}\nx2 = {}".format(x1, x2))
-        
+        print("\nx1 = {}\nx2 = {}".format(x1, x2))  
