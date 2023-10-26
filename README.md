@@ -5,12 +5,12 @@ estos ejercicios son las prácticas llevadas a cabo durante las clases de Fundam
 
 ## conceptos abordados
 
-- solicitud de datos al usuario.
-- variables.
-- operaciones simples.
-- condicionales.
-- bucles y repeticiones.
-- listas y tuplas.
+- solicitud de datos al usuario. - (Sesión 1)
+- variables. - (Sesión 1)
+- operaciones simples. - (Sesión 2)
+- condicionales. - (Sesión 2)
+- listas y tuplas. - (Sesión 3)
+- bucles y repeticiones. - (Sesión 4 y 5)
 - funciones.
 - módulos externos.
 - ficheros.
