@@ -23,10 +23,10 @@ while not ff:
         ff = True
     elif op == 1:
         a = int(input("Escribe a: "))
-        b = int(input("Escribe a: "))
-        c = int(input("Escribe a: "))
-        d = int(input("Escribe a: "))
-        x = int(input("Escribe a: "))
+        b = int(input("Escribe b: "))
+        c = int(input("Escribe c: "))
+        d = int(input("Escribe d: "))
+        x = int(input("Escribe x: "))
         r = poli(a, b, c, d, x)
         
-        print(r)
+        print(f"El polinomio de {a}, {b}, {c}, {d} elevado a {x} es: {r}")
