@@ -3,7 +3,7 @@ def menu():
     while not fo:
         print("0) Salir")
         print("1) Nuevo polinomio")
-        opcion = int(input("Opción: "))
+        opcion = int(input("\nOpción: "))
         if opcion < 0 or opcion > 1:
             print("Opcion inválida, repetir")
         
@@ -27,6 +27,7 @@ while not ff:
         c = int(input("Escribe c: "))
         d = int(input("Escribe d: "))
         x = int(input("Escribe x: "))
+
         r = poli(a, b, c, d, x)
         
         print(f"El polinomio de {a}, {b}, {c}, {d} elevado a {x} es: {r}")
