@@ -11,9 +11,10 @@ estos ejercicios son las prácticas llevadas a cabo durante las clases de Fundam
 - condicionales. - (Sesión 2)
 - listas y tuplas. - (Sesión 3)
 - bucles y repeticiones. - (Sesión 4 y 5)
-- funciones.
-- módulos externos.
-- ficheros.
+- funciones. - (Sesión 6)
+- módulos externos. - (Sesión 7)
+- numpy. - (Sesión 8)
+- ficheros. - (Sesión 9)
 
 ## licencia
 py se encuentra bajo la licencia [MIT]('./LICENSE').

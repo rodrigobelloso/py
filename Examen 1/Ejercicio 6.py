@@ -69,8 +69,8 @@ def solicita_lista_enteros(tam):  # 3 Pto
         listaEnt.append(valor)
     return listaEnt 
 
-def main(elem):  # 3 Pto
-    listaAFiltrar = solicita_lista_enteros(elem)
+def main(tam):  # 3 Pto
+    listaAFiltrar = solicita_lista_enteros(tam)
     valorLim = int(input("Introduce el límite para filtrar: "))
     filtro = lista_inferiores(listaAFiltrar, valorLim)
     print(f"La lista {listaAFiltrar} filtrada por el límite {valorLim} es {filtro}")
