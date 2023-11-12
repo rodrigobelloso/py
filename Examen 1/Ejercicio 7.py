@@ -22,7 +22,11 @@ Ejemplo:
 
 
 def mensaje(c, n):
-    pass   # Sustituya pass por su solución
+    if n <= 0:
+        pass
+    else:
+        palabra = f"{c}" + f" - {c}" * (n - 1)
+        print(palabra)
 
 
 # No modificar el código a partir de aquí
