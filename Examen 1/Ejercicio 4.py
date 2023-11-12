@@ -32,7 +32,13 @@ from math import sqrt
 
 
 def normaliza(v):
-
+    
+    w = []
+    
+    for i in range(len(v)):
+        cuad = (v[i] ** 2)
+        modulo = sqrt(cuad + cuad)
+        w.append(modulo)
     return w
 
 
