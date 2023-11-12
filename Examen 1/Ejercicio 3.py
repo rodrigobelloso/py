@@ -21,13 +21,17 @@ Puntuación del ejercicio: 3 sobre 100
 
 
 def factorial(n):  # Función para calcular el factorial (no modificar)
-
-    return producto
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
 
 
 def numero_e(n):
-
-    return r
+    suma = 0
+    for i in range(n + 1):
+        suma += 1 / factorial(i)
+    return suma
 
 
 # No modificar el código a partir de aquí
