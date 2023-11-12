@@ -20,7 +20,7 @@ Escribe una función normaliza() que:
     3. Devuelve una lista w con las componentes del vector v normalizadas:
         [w_0, w_1, ..., w_n]   (w_i = v_i / modulo)
 
-Ej: Para v = [3, 0, 5, -4] devolvería w = [0.424, 0.0, 0.707, -0.565]
+Ej: Para v = [3, 0, 5, -4] devolvería w = [4.242, 0.0, 7.071, 5.656]
 ***********************************************************************************************
 '''
 
