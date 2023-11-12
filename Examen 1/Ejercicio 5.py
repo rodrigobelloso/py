@@ -58,12 +58,33 @@ IMPORTANTE: No se puede hacer uso ni de la función sqrt ni ninguna otra funció
 
 
 def raiz_cuadrada_entera(n):  # 5 Pto
-    pass
+     if n < 0:
+         print("ERROR: El valor introducido es negativo.")
+         return None
+     
+     cont = 0
+     while cont*cont <= n:
+         cont += 1
+     return cont - 1
 
 
 def main():  # 5 Pto
-    pass
-
+    lista_v = []
+    lista_r = []
+    opcion = 1
+    
+    while opcion == 1:
+        valor = int(input("Introduce un entero no negativo: "))
+        lista_v.append(valor)
+        raiz = raiz_cuadrada_entera(valor)
+        lista_r.append(raiz)
+        
+        if raiz is not None:
+            print(f"La raiz cuadrada entera de {valor} es {raiz}")
+            
+        opcion = int(input("Para repetir pulse el 1: "))
+   
+        print(f"El histórico de valores y resultados es: {valor}, {raiz}")
 
 if __name__ == '__main__':
     main()
