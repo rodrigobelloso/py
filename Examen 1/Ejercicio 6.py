@@ -49,9 +49,16 @@ Ejemplo de ejecución para una llamada main(5):
 # los parámetros que sean necesarios
 
 
-def lista_inferiores():  # 4 Pto
-    pass
+def lista_inferiores(listaAFiltrar, valorLim):  # 4 Pto
+    listaFiltrada = []
+    
+    for i in range(len(listaAFiltrar)):
+        if listaAFiltrar[i] < valorLim:
+            listaFiltrada.append(listaAFiltrar[i])
+        else:
+            pass
 
+    return listaFiltrada
 
 def solicita_lista_enteros(tam):  # 3 Pto
     
@@ -60,12 +67,13 @@ def solicita_lista_enteros(tam):  # 3 Pto
     for i in range(tam):
         valor = float(input(f"Introduce el elemento {i + 1} de {tam} de la lista: "))
         listaEnt.append(valor)
-    return listaEnt
-        
-
+    return listaEnt 
 
 def main(elem):  # 3 Pto
-    solicita_lista_enteros(elem)
+    listaAFiltrar = solicita_lista_enteros(elem)
+    valorLim = int(input("Introduce el límite para filtrar: "))
+    filtro = lista_inferiores(listaAFiltrar, valorLim)
+    print(f"La lista {listaAFiltrar} filtrada por el límite {valorLim} es {filtro}")
     
 
 if __name__ == '__main__':
