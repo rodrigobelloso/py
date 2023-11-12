@@ -84,7 +84,9 @@ def main():  # 5 Pto
             
         opcion = int(input("Para repetir pulse el 1: "))
    
-        print(f"El histórico de valores y resultados es: {valor}, {raiz}")
+    print(f"El histórico de valores y resultados es:")
+    print(lista_v)
+    print(lista_r)
 
 if __name__ == '__main__':
     main()

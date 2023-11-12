@@ -53,13 +53,21 @@ def lista_inferiores():  # 4 Pto
     pass
 
 
-def solicita_lista_enteros():  # 3 Pto
-    pass
+def solicita_lista_enteros(tam):  # 3 Pto
+    
+    listaEnt = []
+    
+    for i in range(tam):
+        valor = float(input(f"Introduce el elemento {i + 1} de {tam} de la lista: "))
+        listaEnt.append(valor)
+    return listaEnt
+        
 
 
-def main():  # 3 Pto
-    pass
-
+def main(elem):  # 3 Pto
+    solicita_lista_enteros(elem)
+    
 
 if __name__ == '__main__':
-    main(5)
+    tam = 5
+    main(tam)
