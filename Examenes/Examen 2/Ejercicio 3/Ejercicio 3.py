@@ -24,7 +24,23 @@ import numpy as np
 
 
 def dibuja_curva(lista_parametros, intervalo, num_puntos):
-    pass  # Sustituir pass por su solución
+    a = lista_parametros[0]
+    b = lista_parametros[1]
+    c = lista_parametros[2]
+    d = lista_parametros[3]
+    j = lista_parametros[4]
+    k = lista_parametros[5]
+
+    t_min, t_max = intervalo
+    t = np.linspace(t_min, t_max, num_puntos)
+
+    x = np.cos(a * t) - np.cos(b * t) ** j
+    y = np.sin(c * t) - np.sin(d * t) ** k
+
+    plt.plot(x, y)
+    plt.xlabel("eje x")
+    plt.ylabel("eje y")
+    plt.show()
 
 
 # No modificar a partir de esta línea
