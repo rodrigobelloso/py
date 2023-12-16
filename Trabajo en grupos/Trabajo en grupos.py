@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 rgMin = 1
 rgMax = 25
-rgF = range(1, 25)
+rgF = range(rgMin, rgMax + 1)
 
 def aproximacion_pi(n, tipo):
     if tipo == 'wallis':
