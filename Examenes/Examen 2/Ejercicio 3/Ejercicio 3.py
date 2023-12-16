@@ -14,7 +14,7 @@ intervalo:         lista con los valores inicial y final del tiempo t en el que
 num_puntos:        número de puntos a utilizar para dibujar la gráfica
 
 
-El resultado debe ser similar al contenido en el fichero 'ej1_figura.png'
+El resultado debe ser similar al contenido en el fichero 'Resultado.png'
 
 Puntuación del ejercicio: 10 sobre 100
 '''
